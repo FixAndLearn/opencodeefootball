@@ -1,10 +1,25 @@
+# Dependencies — installed by Vercel on build
 node_modules
+
+# Next.js build output — rebuilt on Vercel
 .next
 out
+
+# Local environment files — Vercel injects env vars via its dashboard.
+# `.env.example` is intentionally NOT ignored so the template is available.
 .env*.local
+.env
+
+# Vercel CLI local metadata
 .vercel
+
+# Test artifacts
 coverage
 playwright-report
 test-results
 
+# TypeScript incremental build info
 tsconfig.tsbuildinfo
+
+# Everything else (source, config, migrations, functions) IS tracked,
+# so Vercel can clone and build the app from GitHub.
